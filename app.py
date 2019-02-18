@@ -4,12 +4,12 @@ import pyrebase
 app=Flask(__name__)
 
 config={
-    "apiKey": "AIzaSyDKv6XkAjA3y8IQ_iaM9CEFArxpnjpidvk",
-    "authDomain": "start-ups-hub.firebaseapp.com",
-    "databaseURL": "https://start-ups-hub.firebaseio.com",
-    "projectId": "start-ups-hub",
-    "storageBucket": "start-ups-hub.appspot.com",
-    "messagingSenderId": "575334323699"
+    "apiKey": "****************",
+    "authDomain": "*********.firebaseapp.com",
+    "databaseURL": "https://*******.firebaseio.com",
+    "projectId": "**************",
+    "storageBucket": "*******.appspot.com",
+    "messagingSenderId": "************"
 }
 
 firebase = pyrebase.initialize_app(config)
