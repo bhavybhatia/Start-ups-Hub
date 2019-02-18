@@ -4,12 +4,12 @@ import pyrebase
 app=Flask(__name__)
 
 config={
-    "apiKey": "<your_api_key>",
-    "authDomain": "<projectName>.firebaseapp.com",
-    "databaseURL": "https://<projectName>.firebaseio.com",
-    "projectId": "<projectName>",
-    "storageBucket": "<projectName>.appspot.com",
-    "messagingSenderId": "<MessageSenderId>"
+    "apiKey": "AIzaSyDKv6XkAjA3y8IQ_iaM9CEFArxpnjpidvk",
+    "authDomain": "start-ups-hub.firebaseapp.com",
+    "databaseURL": "https://start-ups-hub.firebaseio.com",
+    "projectId": "start-ups-hub",
+    "storageBucket": "start-ups-hub.appspot.com",
+    "messagingSenderId": "575334323699"
 }
 
 firebase = pyrebase.initialize_app(config)
@@ -26,10 +26,15 @@ def login():
 @app.route('/signin',methods=['POST','GET'])
 
 def signin():
+    check="Please Check Your Credientials"
     if request.method=='POST':
         email=request.form['email']
         password=request.form['password']
-        user=auth.sign_in_with_email_and_password(email,password)
+        try:
+            user=auth.sign_in_with_email_and_password(email,password)
+        except:
+            return redirect(url_for('login'))
+
         return render_template("signin.html")
 
     else:
