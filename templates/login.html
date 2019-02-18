@@ -1,0 +1,12 @@
+<html>
+
+<h1> LogIn Page </h1>
+<form action="{{url_for('signin')}}" method="post">
+  <input type="email" name="email" placeholder="Email">
+  <input type="text" name="password" placeholder="password">
+
+  <input type="submit">
+</form>
+<br><br>
+<h3><a href="{{url_for('reset')}}">Forgot your password</a></h3>
+</html>
