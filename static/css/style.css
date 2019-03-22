@@ -1,0 +1,125 @@
+nav
+{
+    height: 80px;
+}
+#mynav a
+{
+    margin-right: 20px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 110%;
+}
+.navbar-brand
+{
+    color: white !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.slider
+{
+    margin-top: 71px;
+}
+.carousel-item {
+  height: 70vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  z-index:0;
+  background-color: rgba(144, 12, 63, 0.4);
+}*/
+.bottom-line {
+    height: 3px;
+    width: 25px;
+    margin-left:49%;
+    margin-bottom: 20px;
+    background-color: darkblue;
+}
+.long-bottom-line
+{
+    height: 3px;
+    width: 50px;
+    margin-bottom: 20px;
+    margin-left:43%;
+    background-color: darkblue;
+}
+
+.register-form {
+    color: black;
+    border-radius: 10px;
+    border: 1.5px solid #ffc107;
+    font-family: 'Raleway', sans-serif;
+/*  background-color: #000041;*/
+  padding: 0px !important;
+    width: 40px;
+    
+}
+
+.benefits {
+    font-family: 'Montserrat';
+
+}
+.register-form input
+{
+    border-color: #ffc107;
+}
+.register-form label
+{
+    font-size: 18px;
+    color: #1f3434;
+}
+.register_div {
+    background-color: #ffc107; 
+    color: white; 
+    border-radius: 2px; 
+    padding-top: 15px; 
+    font-weight: 1000; 
+    text-align: center;
+}
+
+.benefits_list {
+    font-size: 20px;
+}
+.benefits_list li
+{
+    margin-bottom: 20px;
+    color: #1f3434;
+}
+
+.register {
+    margin-top: 90px;
+}
+
+.partners {
+    background-color: #101a1a;
+}
+.card
+{
+    margin-top: 50px;
+    background-color: #000046;
+    height: 150px;
+    
+}
+
+.startup_up {
+    margin-top: 20px;
+}
+
+.startup_down
+{
+    margin-top: -5%;
+}

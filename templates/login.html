@@ -1,12 +1,12 @@
 <html>
 
 <h1> LogIn Page </h1>
-{% if check %}
-  {{check}}
+{% if error %}
+  <h6 style="color:red">{{error}}</h6>
 {% endif %}
-<form action="{{url_for('signin')}}" method="post">
+<form action="{{url_for('login')}}" method="post">
   <input type="email" name="email" placeholder="Email">
-  <input type="text" name="password" placeholder="password">
+  <input type="password" name="password" placeholder="password">
 
   <input type="submit">
 </form>

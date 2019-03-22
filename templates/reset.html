@@ -1,6 +1,9 @@
 <html>
 <h1> Reset Your password </h1>
-  <form action="{{url_for('resetDone')}}" method="post">
+{% if error1 %}
+  <h4 style="color:red">{{error1}}</h4>
+{% endif %}
+  <form action="{{url_for('reset')}}" method="post">
     <input type="email" placeholder="Enter your Email" name="email" required>
     <input type="submit" placeholder="Send Verification Code">
   </form>
